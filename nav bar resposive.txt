@@ -1,0 +1,74 @@
+.top {
+    position: relative;
+    align-items: center;
+    max-height: 948px;
+    max-width: 948px;
+    margin-top: 1%;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding: 1%;
+    box-shadow: 0rem 0.938rem 1.25rem rgba( 0, 0, 0, 0.25);
+    border-radius: 0.625rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    
+}
+
+
+@media (max-width: 600px) {
+    .top {
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+        max-height: 59.25rem;
+        max-width: 59.25rem;
+        transition: .3s;
+    }
+  }
+
+
+
+
+<img id="logo" src="edwarddy.jpg" alt="Edward's">   
+
+
+<header id="header">
+        
+        <input type="checkbox" id="check">
+
+    <label for="check" class="menu">
+        <i class="bx-bx-menu" id="icon-menu">
+            <div class="open"></div>
+            <div class="open"></div>
+            <div class="open"></div>
+        </i>
+        <i class="bx-bx-x" id="close-menu"></i>
+
+    </label>
+               
+        <img id="logo" src="edwarddy.jpg" alt="Edward's">  
+        
+        
+         <nav class="navbar">
+                <a class="click" href="Portfolio.html">Home</a>
+                <a class="click" href="Project.html">Projects</a>
+                <a class="click" href="Biography.html">Biography</a>
+                <a class="click" href="Friends.html">Friends</a>
+                <a class="click" href="Skills.html">Resume</a>
+         </nav>
+        
+    </header>  
+
+
+
+For nav bar label
+
+	<input type="checkbox" id="checkbox-toggle">
+        <label for="checkbox-toggle">&#9776;</label>

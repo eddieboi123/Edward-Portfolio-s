@@ -1,0 +1,234 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    margin: 0;
+    text-decoration: none;
+    transition: 1s ease;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#logo {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+    margin:0;
+    left: 0;
+    display: absolute;
+}
+
+#header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: .5rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+#header::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(100px);
+    z-index: -1;
+}
+
+nav {
+    margin-right: 2.5rem;
+}
+
+.click:hover {
+    font-size: x-large;
+    color: rgba(226, 143, 26, 0.962);
+}
+
+a {
+    color: #fff;
+    font-weight: bolder;
+    margin-left: 2.5rem;
+    font-size: larger;
+}
+
+#checkbox-toggle {
+    display: none;
+}
+
+#hamburger {
+    display: none;
+    color: white;
+    font-size: xx-large;
+}
+
+#close {
+    display: none;
+    color: white;
+    font-size: larger;
+}
+
+
+main {
+    position: absolute;
+    top: 25rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -200px;
+    
+}
+
+#section1 {
+    border: 1px solid transparent;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    color: #fff;
+    padding: 100px;
+    max-width: 948px;
+    max-height: 948px;
+    text-align: center;
+    margin-left: 0.211%;
+    margin-right: 0.211%;
+}
+
+.Qoute {
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+#Biography {
+    display: flex;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(10px);
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#bioImage {
+    margin: 30px;
+    height: 50%;
+    width: 30%;
+}
+
+#bioStory {
+    margin: 30px;
+    height: 200px;
+    width: 200px;
+    overflow: scroll;
+}
+
+h2 {
+    margin: 200px;
+}
+
+@media (max-width: 948px){
+
+    #header {
+        padding: .5rem;
+    }
+
+    #logo {
+        height: 4rem;
+        width: 4rem;
+        z-index: 2;
+    }
+
+    #section1 {
+        padding: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+   
+}
+
+@media (max-width: 768px) {
+    #hamburger {
+        display: block;
+        z-index: 2;
+        
+    }
+
+    #section1 {
+        padding: 50px;
+        margin-left: 4rem;
+        margin-right: -1.5rem;
+        margin-top: -80px;
+    }
+
+    #home{
+        margin-top: -30%;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 350%;
+        background-color: rgba(0, 0, 0, .1);
+        backdrop-filter: blur(50px);
+        overflow: hidden;
+        width: 100%;
+        transition: .3s ease;
+        
+    }
+
+    nav  {
+        display: block;
+        
+    }
+
+    nav .click {
+        margin: 1.5rem 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .click {
+        display: flex;
+        gap: none;
+        justify-content: center;
+        
+    }
+
+    nav {
+        display: ;
+        transform: translateY(-500px);
+        z-index: -1;
+    }
+
+    #checkbox-toggle:checked ~ nav{
+        display: block;
+        transition: 1s ease;
+        transform: translateY(0);
+        z-index: -2;
+    }
+    
+}

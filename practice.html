@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input1">
+    <p>Counting from: <span id="inc">number</span> </p>
+    <button type="button" id="button1">Take the input</button>
+    <button type="button" id="incrementing">Then increment</button>
+    <script>
+        let val;
+         document.getElementById("button1").onclick = function(){
+            
+             val = document.getElementById("input1").value;
+          val = Number(val)
+          document.getElementById("inc").innerHTML = val;
+
+          document.getElementById("incrementing").onclick = function(){
+            document.getElementById("inc").innerHTML = val += 1;
+            
+          if( val >= 100){
+            alert("nigge WTF!?")
+          }
+          
+          }
+          
+        }
+       /* let num = edward();
+        num = Number(edward())
+        document.getElementById("incrementing").onclick = function getValue(){
+           document.getElementById("inc").innerHTML =  num++;
+        }
+       */
+    </script>
+</body>
+</html>

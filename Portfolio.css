@@ -1,0 +1,162 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s ease;
+    
+}
+
+#background {
+    position: fixed;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+header {
+    position: fixed;
+    
+    backdrop-filter: blur(200px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    overflow: hidden;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: bolder;
+}
+
+.click {
+    margin: 5%;
+}
+
+#logo {
+    border: 1px solid blue;
+    max-height: 59.25rem;
+    max-width: 59.25rem;
+    border-radius: 50%;
+    height: 12%;
+    width: 6%;
+    position: relative;
+    right: 5%;
+    
+}
+
+
+#logo:hover {
+    border: 1px solid blue;
+    max-height: 59.25rem;
+    max-width: 59.25rem;
+    border-radius: 50%;
+    height: 14%;
+    width: 8%;
+    box-shadow: 0px 10px 20px  rgb(218, 122, 13);
+}
+
+
+
+
+a {
+    text-decoration-color: transparent;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+a:hover {
+    
+    color:  rgb(218, 122, 13);
+}
+
+a:active {
+    color: lightblue;
+}
+
+.click:hover {
+    font-size: 25px;
+    
+}
+
+
+#Home {
+    justify-content: center;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    max-height: 59.25rem;
+    max-width: 59.25rem;
+    margin-top: 15%;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 5%;
+    padding-bottom: 10%;
+    box-shadow: 0px 20px 30px rgba( 0, 0, 0, 0.25);
+    border-radius: 0.625rem;
+    
+    
+}
+
+footer {
+    color: #fff;
+    background-color: #000;
+}
+
+
+
+@media (max-width: 600px) {
+    .menu-icon {
+        flex-direction: row;
+        font-size: 15px;
+        padding-right: 30%;
+    }
+    
+    header {
+        padding: 2%;
+        transition: 0.3s;
+    }
+
+    #logo {
+        border: 1px solid blue;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        left: -20px;
+        top: 0;
+        
+    }
+
+    main {
+        max-height: 59.25rem;
+        max-width: 59.25rem;
+        margin-top: 30%;
+        transition: 0.3s;
+    }
+    
+    a {
+        font-size: 13px;
+    }
+
+    a:active {
+        font-size: 25px;
+        transition: none;
+    }
+    
+} 
+    
+
+
+
+
+
